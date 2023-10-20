@@ -1,0 +1,1092 @@
+* {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.side-bar-container {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+
+.sidebar {
+  width: 320px;
+  height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-top: 40px;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.img-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.number-step {
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.box-info-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.step {
+  color: var(--Light-Blue, #abbcff);
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-step {
+  color: var(--White, #fff);
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ////////////    STEP-1    ///////////// */
+
+.step1-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+
+.step1-title {
+  color: #022959;
+  font-family: Ubuntu;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.step1-info {
+  color: #9699aa;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.form {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#label-phoneNumber,
+#label-name,
+#label-email {
+  color: #022959;
+  font-family: Ubuntu;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+#phoneNumber,
+#name,
+#email {
+  color: #022959;
+  width: 450px;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--Border-Color, #d6d9e6);
+  background: var(--White, #fff);
+  margin-bottom: 40px;
+  padding-left: 16px;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.25s;
+}
+
+#phoneNumber:hover,
+#name:hover,
+#email:hover {
+  border-color: #483eff;
+}
+
+#phoneNumber::placeholder,
+#name::placeholder,
+#email::placeholder {
+  color: #9699aa;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 156.25% */
+}
+
+.btn-box {
+  width: 450px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.btn-next-ste1 {
+  width: 123px;
+  height: 48px;
+  border-radius: 8px;
+  background: #022959;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  transition: background-color 0.25s;
+}
+
+.btn-next-ste1:hover {
+  background-color: #164a8a;
+}
+
+/* ////////////    STEP-2    ///////////// */
+
+.containe-boxPlan {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.container-plan {
+  width: 160px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #d6d9e6;
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.25s;
+}
+
+.container-plan:hover {
+  border-color: #483eff;
+}
+
+.img-arcade {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.plan-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 8px;
+}
+
+.plan-name {
+  color: #022959;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.plan-price {
+  color: #9699aa;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.switcher-bar {
+  width: 516px;
+  height: 50px;
+  border-radius: 8px;
+  background: #f8f9ff;
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.monthly {
+  color: #9699aa;
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.switcher-img {
+  width: 46px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.annual {
+  color: #9699aa;
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-go-back-container {
+  margin-top: 50px;
+  width: 516px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-go-back {
+  color: #9699aa;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.25s;
+}
+
+.btn-go-back:hover {
+  color: #022959;
+}
+
+/* //////////////  STEP 3  ////////////// */
+
+.containe-boxAddOns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.container-addOns {
+  width: 516px;
+  height: 81px;
+  border-radius: 8px;
+  border: 1px solid #d6d9e6;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 0.25s;
+}
+
+.container-addOns:hover {
+  border-color: #483eff;
+}
+
+.leftAddOns {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+}
+
+.check-box {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d6d9e6;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-infoPlannOns {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 7px;
+}
+
+.text-up {
+  margin: 0;
+  color: #022959;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text-down {
+  margin: 0;
+  color: #9699aa;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.price-AddOns {
+  color: #483eff;
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* //////////////  STEP 4  ////////////// */
+
+.container-summary {
+  width: 516px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-bottom: 30px;
+}
+
+.info-summary-container {
+  width: 516px;
+  height: auto;
+  border-radius: 8px;
+  background: #f8f9ff;
+  margin-top: 35px;
+  padding: 16px 24px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.kind-plan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 24px;
+}
+
+.kind-plan {
+  color: var(--Denim, #022959);
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.change {
+  color: var(--Grey, #9699aa);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.25s;
+}
+
+.change:hover {
+  color: #483eff;
+}
+
+.cost {
+  color: var(--Denim, #022959);
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.line {
+  opacity: 0.2043;
+  background: var(--Grey, #9699aa);
+  width: 468px;
+  height: 1px;
+}
+
+.container-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service {
+  color: var(--Grey, #9699aa);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.price-service {
+  color: var(--Denim, #022959);
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container-final-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+}
+
+.price-months {
+  color: var(--Purple, #483eff);
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* //////////////  STEP 5  ////////////// */
+
+.container-thank-you {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-thank-you {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 32px;
+  object-fit: cover;
+}
+
+.thankyou {
+  color: var(--Denim, #022959);
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 16px;
+}
+
+.thankyou-detail {
+  width: 500px;
+  color: var(--Grey, #9699aa);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1050px) {
+  .sidebar {
+    width: 320px;
+  }
+
+  .step1-container {
+    margin-left: 50px;
+  }
+
+  #phoneNumber,
+  #name,
+  #email {
+    width: auto;
+    max-width: 450px;
+  }
+
+  .btn-box {
+    width: auto;
+    max-width: 450px;
+  }
+
+  #phoneNumber,
+  #name,
+  #email {
+    font-size: 15px;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 900px) {
+  .containe-boxPlan {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+  }
+
+  .container-plan {
+    width: 330px;
+
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+  }
+
+  .switcher-bar {
+    width: 330px;
+    height: 50px;
+  }
+
+  .btn-go-back-container {
+    width: 330px;
+  }
+
+  /* //////////////  STEP 3  ////////////// */
+
+  .container-addOns {
+    width: 330px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .leftAddOns {
+    gap: 18px;
+  }
+
+  .text-up {
+    font-size: 17px;
+  }
+
+  .text-down {
+    font-size: 13px;
+  }
+
+  .price-AddOns {
+    font-size: 15px;
+  }
+
+  /* //////////////  STEP 4  ////////////// */
+
+  .container-summary {
+    width: 340px;
+  }
+
+  .info-summary-container {
+    width: 340px;
+  }
+
+  .line {
+    width: 288px;
+  }
+
+  .price-months {
+    font-size: 18px;
+  }
+
+  /* //////////////  STEP 5  ////////////// */
+
+  .container-thank-you {
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+    background: var(--White, #fff);
+  }
+
+  /* //////////////  STEP 5  ////////////// */
+
+  .container-thank-you {
+    margin-top: 30px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+    background: var(--White, #fff);
+  }
+
+  .thankyou-detail {
+    width: auto;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 700px) {
+  .side-bar-container {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+
+    position: relative;
+    background-color: #eff5ff;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 30vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 40px;
+    border-radius: 0;
+    gap: 22px;
+  }
+
+  .img-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .step-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+
+  /* ////////////    STEP-1    ///////////// */
+
+  .step1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+
+    width: 70vw;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .step1-info {
+    font-size: 15px;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+
+  #phoneNumber,
+  #name,
+  #email {
+    font-size: 15px;
+    margin-bottom: 30px;
+    width: 60vw;
+  }
+
+  /* ////////////  STEP 2 ////////// */
+
+  .container-plan {
+    width: 60vw;
+  }
+
+  .switcher-bar {
+    width: 100%;
+  }
+
+  .btn-go-back-container {
+    width: 100%;
+  }
+
+  /* //////////////  STEP 3  ////////////// */
+
+  .containe-boxAddOns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-addOns {
+    width: 100%;
+  }
+
+  .leftAddOns {
+    gap: 18px;
+  }
+
+  .text-up {
+    font-size: 17px;
+  }
+
+  .text-down {
+    font-size: 12px;
+  }
+
+  .price-AddOns {
+    font-size: 14px;
+  }
+
+  /* //////////////  STEP 4  ////////////// */
+
+  .container-summary {
+    width: 100%;
+  }
+
+  .info-summary-container {
+    width: 100%;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .price-months {
+    font-size: 22px;
+  }
+
+  /* //////////////  STEP 5  ////////////// */
+
+  .img-thank-you {
+    margin-top: 100px;
+  }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 500px) {
+  .side-bar-container {
+    height: 100vh;
+  }
+
+  .sidebar {
+    height: 200px;
+    gap: 14px;
+  }
+
+  .container-plan {
+    width: 80vw;
+  }
+
+  /* ////////////    STEP-1    ///////////// */
+
+  .step1-title {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .step1-info {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #phoneNumber,
+  #name,
+  #email {
+    font-size: 15px;
+    margin-bottom: 30px;
+    width: 80vw;
+  }
+
+  #phoneNumber::placeholder,
+  #name::placeholder,
+  #email::placeholder {
+    font-size: 13px;
+  }
+
+  .step1-container {
+    width: 90vw;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 420px) {
+  .side-bar-container {
+    height: 130vh;
+  }
+
+  #phoneNumber,
+  #name,
+  #email {
+    font-size: 14px;
+  }
+
+  .container-plan {
+    width: 80vw;
+  }
+
+  /* //////////////  STEP 1  ////////////// */
+
+  .step1-container {
+    padding: 14px;
+  }
+
+  /* //////////////  STEP 3  ////////////// */
+
+  .containe-boxAddOns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-addOns {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+
+  .leftAddOns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .text-up {
+    font-size: 17px;
+  }
+
+  .text-down {
+    font-size: 12px;
+  }
+
+  .price-AddOns {
+    font-size: 13px;
+  }
+
+  /* //////////////  STEP 4  ////////////// */
+
+  .container-summary {
+    width: 100%;
+  }
+
+  .info-summary-container {
+    width: 100%;
+    padding: 16px 12px;
+  }
+
+  .kind-plan {
+    font-size: 15px;
+  }
+
+  .cost {
+    font-size: 14px;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .service {
+    font-size: 15px;
+  }
+
+  .price-service {
+    font-size: 14px;
+  }
+
+  .container-final-price {
+    padding: 0px 12px;
+  }
+
+  .price-months {
+    font-size: 18px;
+  }
+
+  /* //////////////  STEP 5  ////////////// */
+
+  .container-thank-you {
+    margin-top: 0px;
+  }
+
+  .img-thank-you {
+    margin-top: 150px;
+  }
+
+  .thankyou-detail {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .side-bar-container {
+    height: 160vh;
+  }
+
+  .number-step {
+    width: 40px;
+    height: 40px;
+
+    font-size: 18px;
+  }
+
+  .container-plan {
+    width: 80vw;
+  }
+
+  .switcher-bar {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .btn-go-back-container {
+    margin-top: 40px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+  }
+
+  .img-thank-you {
+    margin-top: 180px;
+  }
+}
